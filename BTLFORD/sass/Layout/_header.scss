@@ -1,0 +1,359 @@
+.header_content {
+    position: fixed;
+    z-index: 2001;
+    background-color: $color-white-0;
+    width: 1440px;
+    .eyebrow {
+        background-color: $color-white-cream-1;
+
+        .row {
+            .eyebrow_left {
+                height: 40px;
+                line-height: 30px;
+                margin-right: 0;
+                a {
+                    text-decoration: none;
+                    .eyebrow-icon {
+                        img {
+                            width: 43px;
+                            height: 30px;
+                        }
+                    }
+                    .eyebrow-text {
+                        @include styleText($color-blue-4, $fs-1 - 1, $fw-normal);
+                        line-height: 40px;
+                    }
+                }
+            }
+            .eyebrow_right {
+                line-height: 35px;
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-blue-1;
+                    }
+                    i {
+                        color: $color-black-1;
+                    }
+                    .eyebrow_textright {
+                        @include styleText($color-blue-1, $fs-1 - 1, $fw-normal);
+                        margin-left: $mg-1;
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
+        padding: 0;
+        .header_left {
+            .navbar-brand {
+                .logo-ford {
+                    background: url(../img/bsr-sprite2x.webp) no-repeat -200px 0;
+                    width: 93px;
+                    height: 35px;
+                    background-size: 400px 200px;
+                    display: inline-block;
+                    margin-top: $mg-1;
+                }
+            }
+            .navbar-nav {
+                margin-top: $mg-1;
+                .nav-item {
+                    .nav-link {
+                        @include styleText($color-blue-1, $fs-0 + 1, $fw-normal);
+                    }
+                    .collapse {
+                        position: absolute;
+                        width: 1442px;
+                        left: -294%;
+                        padding: 0;
+                        margin: 0;
+
+                        .myNavBar {
+                            border: 1px solid transparent;
+                            background-color: $color-gray-4;
+                            .nav-tabs {
+                                border: none;
+                                margin-left: 130px;
+                                .nav-item::after {
+                                    content: "";
+                                    width: 0;
+                                    height: 4px;
+                                    display: block;
+                                    background-color: $color-blue-1;
+                                    transition: all 0.5s;
+                                }
+                                .nav-item:hover::after {
+                                    width: 100%;
+                                }
+
+                                .nav-item {
+                                    .nav-link {
+                                        border: none;
+                                        @include styleText($color-blue-1, $fs-1 + 1, $fw-normal);
+                                        padding: $pd-2 $pd-1;
+                                        &.active {
+                                            background-color: $color-gray-4;
+                                            border-bottom: 4px solid $color-blue-4;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product__vehicles {
+                        background-color: $color-white-0;
+                        overflow-y: scroll;
+                        .container {
+                            .tab-content {
+                                max-width: 1440px;
+                                .product__menu {
+                                    display: flex;
+                                    list-style: none;
+                                    margin-top: $mg-2;
+                                    flex-wrap: wrap;
+                                    .vehicle-list-item {
+                                        max-width: 203px;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        padding: $pd-4 + 5 $pd-1;
+                                        .images-item {
+                                            img {
+                                                width: 140px;
+                                                height: 60.5px;
+                                            }
+                                        }
+                                        .name-vehicle {
+                                            p {
+                                                @include styleText($color-blue-1, $fs-0 + 1, $fw-normal);
+                                                text-transform: uppercase;
+                                                line-height: $line-height-1;
+                                                margin: 0;
+                                            }
+                                            span {
+                                                @include styleText($color-black-2, $fs-1, $fw-normal);
+                                            }
+                                            sup {
+                                                color: $color-blue-1;
+                                            }
+                                        }
+                                    }
+                                    .vehiclesContainer {
+                                        justify-content: space-around;
+                                        float: left;
+                                        bottom: 0;
+                                        right: 0;
+                                        border-top: solid 1px #ddd;
+                                        width: 100%;
+                                        text-align: center;
+                                        .container-fluid {
+                                            display: block;
+                                            button {
+                                                margin: $mg-1 $mg-0 + 3;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+                }
+            }
+        }
+   
+    .header_right {
+        .navbar__right {
+            @include styleText($color-blue-1, $fs-1 - 1, $fw-normal);
+            .icon-signin {
+                font-size: $fs-3;
+                margin-right: $mg-1;
+                margin-left: $mg-3 + 20px;
+                vertical-align: middle;
+            }
+
+            .fas.fa-search {
+                font-size: $fs-3;
+                margin: 0 $mg-2;
+            }
+            .fas.fa-globe-americas {
+                font-size: $fs-3;
+                margin: 0 $mg-2;
+                vertical-align: middle;
+            }
+        }
+    }
+   
+    @media screen and ( min-width:1001px) and (max-width:1200px){
+        .header_content {
+            .container{
+                margin-left: $mg-2;
+                .header_right {
+                    .icon__signIn {
+                        .sign__in {
+                            display: none;
+                        }
+                    }
+                    .icon__search {
+                        display: block;
+                    }
+                    .icon__language {
+                        display: block;
+                        .english {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and ( min-width:993px) and (max-width:1000px) {
+    .header_content {
+        .eyebrow {
+            display: none;
+        }
+        .container {
+            margin-left: $mg-1;
+                .header_right {
+                    .icon__signIn {
+                        .sign__in {
+                            display: none;
+                        }
+                    }
+                    .icon__search {
+                        display: block;
+                    }
+                    .icon__language {
+                        display: block;
+                        .english {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and ( min-width:767px) and (max-width:992px) {
+    .header_content {
+        .eyebrow {
+            display: none;
+        }
+        .container {
+            margin-left: $mg-3;
+            .header_left {
+                justify-content: flex-end;
+                padding-top: 20px;
+                
+                .navbar-toggler {
+                    position: absolute;
+                    top: 40%;
+                    left: 0;
+                }
+            }
+            .header_right {
+                .icon__signIn {
+                    position: absolute;
+                    bottom: -25px;
+                    right: 0;
+                    .sign__in {
+                        display: none;
+                    }
+                }
+                .icon__search {
+                    display: none;
+                }
+                .icon__language {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and ( min-width:579px) and (max-width:768px){
+    .header_content {
+        .eyebrow {
+            display: none;
+        }
+        .container {
+            margin-left: 75px;
+            .header_left {
+                justify-content: center;
+               
+                .navbar-brand {
+                    .logo-ford {
+                        margin-right: 5px;
+                    }
+                }
+                padding-top: 20px;
+
+                .navbar-toggler {
+                    position: absolute;
+                    top: 45%;
+                    left: 0;
+                }
+            }
+            .header_right {
+                .icon__signIn {
+                    position: absolute;
+                    bottom: 15px!important;
+                    right: 0!important;
+                    .sign__in {
+                        display: none;
+                    }
+                }
+                .icon__search {
+                    display: none;
+                }
+                .icon__language {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:578px) {
+    .header_content {
+        .eyebrow {
+            display: none;
+        }
+        .container {
+            margin-left: 35px;
+            .header_left {
+                justify-content: center;
+               
+                .navbar-brand {
+                    .logo-ford {
+                        margin-right: 5px;
+                    }
+                }
+                padding-top: 20px;
+
+                .navbar-toggler {
+                    position: absolute;
+                    top: 45%;
+                    left: 0;
+                }
+            }
+            .header_right {
+                .icon__signIn {
+                    position: absolute;
+                    bottom: 15px!important;
+                    right: 0!important;
+                    .sign__in {
+                        display: none;
+                    }
+                }
+                .icon__search {
+                    display: none;
+                }
+                .icon__language {
+                    display: none;
+                }
+            }
+        }
+    }
+}

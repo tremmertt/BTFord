@@ -1,0 +1,13 @@
+.airbagRecalls{
+    padding: $pd-4 0;
+    background-color: $color-gray-3;
+    h2{
+        @include styleText($color-red-0,$fs-4,$fw-normal);
+        line-height: $line-height-0;
+    }
+    button{
+        margin-top: $mg-2;
+        padding : 15px 72px;
+        line-height: $line-height-0;
+    }
+}

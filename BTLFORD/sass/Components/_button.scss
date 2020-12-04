@@ -1,0 +1,24 @@
+.ford-btnWhite{
+    @include styleButton($color-white-0,$color-blue-1,$pd-1 + 5,$pd-2);
+    @include styleText($color-blue-1,$fs-0 + 1,$fw-normal);
+    &:hover{
+        @include hoverButton($color-black-1,$color-white-0,$color-black-1);
+    }
+
+}
+
+
+.ford-btnblue{
+    @include styleButton($color-blue-1,$color-blue-1,$pd-1 + 1,$pd-1 + 2);
+    @include styleText($color-white-0,$fs-0,$fw-normal);
+    &:hover{
+        @include hoverButton($color-black-0,$color-white-cream-0,$color-black-0);
+    }
+}
+.ford-btnRed{
+    @include styleButton($color-red-0,$color-red-0,$pd-1 + 5, $pd-4);
+    @include styleText($color-white-0,$fs-0 +1, $fw-normal);
+    &:hover{
+        @include hoverButton($color-red-0,$color-white-0,$color-red-0);
+    }
+}

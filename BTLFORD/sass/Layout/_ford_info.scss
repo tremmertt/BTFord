@@ -1,0 +1,83 @@
+
+.ford_info {
+    .row,
+    .ford__InforButton {
+        max-width: 1440px!important;
+        background-color: rgb(2, 118, 179);
+        padding: 25px;
+        text-align: center;
+        margin: 0;
+        .inforButtonLeft, .inforButtonRight {
+            margin-bottom: $mg-2;
+            h3{
+                @include styleText($color-white-0,$fs-3 + 6,$fw-bold);
+                line-height: $line-height-1;
+            }
+            p{
+                @include styleText($color-white-0,$fs-0,$fw-normal);
+                line-height: $line-height-1; 
+            }
+        }
+        .inforButtonRight{
+            p{
+                margin-bottom: 65px;
+            }
+        }
+    }
+    .ford__InforText{
+        margin-top: $mg-1;
+        @include styleText($color-black-2,$fs-1 ,$fw-normal);
+        text-align: center;
+        line-height: $line-height-1;
+        a{
+            text-decoration: underline;
+            color: $color-blue-1;
+        }
+    }
+    .banner{
+        background-image: url(../img/inventory.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 225px;
+       
+        .banner__info{
+            text-align: center;
+           padding-top: 70px;
+           margin-bottom: $mg-1;
+           h1{
+               margin-bottom: $mg-2;
+           }
+           a{
+              color: $color-blue-3;
+              &:hover{
+                  text-decoration: none;
+              }
+              i{
+                  margin-left: $mg-1;
+              }
+           }
+        }
+        p{
+            @include styleText($color-black-2,$fs-1,$fw-normal);
+            padding-left: 70px ;
+        }
+    }
+}
+@include responsive("medium"){
+    .ford_info{
+        .ford__InforButton{
+            display: block;
+            text-align: center;
+        }
+        .ford__InforText{
+            font-size: $fs-1 - 1;
+        }
+        .banner{
+            .banner__info{
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

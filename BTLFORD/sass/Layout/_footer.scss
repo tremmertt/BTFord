@@ -1,0 +1,360 @@
+.footer_content {
+    .form__search {
+        background-color: $color-black-1;
+        display: flex;
+
+        .input_search {
+            padding: $pd-2 0;
+            i {
+                color: $color-white-0;
+                font-size: $fs-3;
+                vertical-align: middle;
+                padding-bottom: $pd-1;
+            }
+            .search-input {
+                background-color: transparent;
+                border: none;
+                padding: $pd-1 0;
+                padding-right: $pd-4;
+                padding-left: $pd-0;
+                color: $color-white-0;
+                font-size: $fs-3;
+                &::placeholder {
+                    color: $color-white-0;
+                    font-size: $fs-3;
+                }
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+        .myNavbarFooter {
+            color: $color-white-0;
+            display: flex;
+            padding: 30px 0;
+            justify-content: flex-end;
+            span {
+                padding-right: $pd-0;
+            }
+            ul {
+                list-style: none;
+                li {
+                    display: inline;
+                    margin: 0 $mg-1;
+                    a {
+                        @include styleText($color-white-0, $fs-0, $fw-normal);
+                        text-decoration: none;
+                        opacity: 0.5;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_infomation {
+        background-color: #242424;
+        .container {
+            padding: 0;
+
+            .footer__info {
+                display: flex;
+                padding-top: $pd-4;
+                padding-bottom: 100px;
+                margin-bottom: 0;
+                .vehicles,
+                .shopping,
+                .finance,
+                .owner,
+                .experience-ford {
+                    list-style: none;
+                    padding: 0 68px;
+                    text-align: left;
+                    padding-left: unset;
+                    span {
+                        color: $color-white-0;
+                        margin-bottom: $pd-2;
+                    }
+                    ul {
+                        li {
+                            list-style: none;
+                            margin-bottom: $mg-0 + 1;
+                        }
+                        a {
+                            color: $color-white-0;
+                            opacity: 0.5;
+                            line-height: $line-height-1;
+                            &:hover {
+                                text-decoration: none;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                .infomation_hidden {
+                    .finance,
+                    .owner,
+                    .experience-ford {
+                        .icon_hidden1 {
+                            display: none;
+                        }
+                        .icon_hidden2 {
+                            display: none;
+                        }
+                        .icon_hidden3 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_contact {
+        background-color: $color-blue-4;
+        .contact_left {
+            padding-top: $pd-2 + 10;
+            p {
+                @include styleText($color-blue-3, $fs-0 + 3, $fw-normal);
+                a {
+                    color: $color-blue-1;
+                    line-height: $line-height-1;
+                    margin-right: $mg-1;
+                    i {
+                        text-align: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px;
+                        line-height: 40px;
+                        background-color: $color-blue-1;
+                        color: $color-white-0;
+                        margin-right: $mg-1;
+                    }
+                    span {
+                        color: $color-blue-3;
+                        line-height: $line-height-1;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .contact_right {
+            display: flex;
+            padding: $pd-2 + 10 0;
+            justify-content: flex-end;
+            p {
+                align-self: center;
+                margin-right: $mg-2;
+            }
+            ul {
+                align-self: center;
+                li {
+                    list-style: none;
+                    display: inline;
+                    margin-right: $mg-0;
+                    .facebook-icon {
+                        background: url(../img/bsr-sprite2x.webp) no-repeat 0 0;
+                        height: 40px;
+                        width: 40px;
+                        background-size: 400px 200px;
+                        display: inline-block;
+                    }
+                    .twitter-icon {
+                        background: url(../img/bsr-sprite2x.webp) no-repeat -40px 0;
+                        height: 40px;
+                        width: 40px;
+                        background-size: 400px 200px;
+                        display: inline-block;
+                    }
+                    .youtube-icon {
+                        background: url(../img/bsr-sprite2x.webp) no-repeat -80px 0;
+                        height: 40px;
+                        width: 40px;
+                        background-size: 400px 200px;
+                        display: inline-block;
+                    }
+                    .instagram-icon {
+                        background: url(../img/bsr-sprite2x.webp) no-repeat -120px 0;
+                        height: 40px;
+                        width: 40px;
+                        background-size: 400px 200px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .footer_language {
+        background-color: $color-gray-3;
+        padding: $pd-4 0;
+        .logo__language {
+            padding-bottom: $pd-2;
+            display: flex;
+            justify-content: space-between;
+            a {
+                i {
+                    @include styleText($color-blue-6, $fs-3, $fw-bold);
+                    margin-right: $mg-1;
+                    vertical-align: middle;
+                }
+                span {
+                    @include styleText($color-blue-1, $fs-1, $fw-normal);
+                    text-decoration: underline;
+                }
+                &:hover {
+                    i {
+                        color: $color-black-0;
+                    }
+                    span {
+                        color: $color-black-0;
+                    }
+                }
+            }
+            .logo-fordRight {
+                background: url(../img/bsr-sprite2x.webp) no-repeat -150px 0;
+                width: 73px;
+                height: 26px;
+                background-size: 300px 150px;
+                display: block;
+                cursor: pointer;
+            }
+        }
+        p {
+            @include styleText($color-black-2, $fs-1, $fw-normal);
+        }
+        ul {
+            li {
+                list-style: none;
+                display: inline;
+                padding: $pd-0 $pd-2;
+                padding-left: unset;
+                a {
+                    @include styleText($color-black-2, $fs-1, $fw-normal);
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .logo-fordRightHidden {
+            background: url(../img/bsr-sprite2x.webp) no-repeat -150px 0;
+            width: 73px;
+            height: 26px;
+            background-size: 300px 150px;
+        }
+    }
+}
+@include responsive("extra-large") {
+    .footer_content {
+        .footer_contact {
+            .contact_right {
+                display: inline;
+                text-align: right;
+                p {
+                    position: absolute;
+                    right: 80px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 993px) {
+    .footer_content {
+        .footer_infomation {
+            .footer__info {
+                .infomation_hidden {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+@include responsive("large") {
+    .footer_content {
+        .footer_infomation {
+            .footer__info {
+                .vehicles,
+                .shopping,
+                .finance,
+                .owner,
+                .experience-ford {
+                    padding: 0 $pd-2 !important;
+                    .finance_hidden {
+                        display: none;
+                    }
+                    .owner_hidden {
+                        display: none;
+                    }
+                    .experience-fordHidden {
+                        display: none;
+                    }
+                }
+                .infomation_hidden {
+                    .finance,
+                    .owner,
+                    .experience-ford {
+                        display: flex;
+                        padding-bottom: $pd-2 !important ;
+                        border-bottom: 1px solid #3a3a3a;
+                        .icon_hidden1 {
+                            display: block !important;
+                            font-size: $fs-2;
+                            margin-left: 200px;
+                            color: $color-white-0;
+                        }
+                        .icon_hidden2 {
+                            display: block !important;
+                            color: $color-white-0;
+                            font-size: $fs-2;
+                            margin-left: 210px;
+                        }
+                        .icon_hidden3 {
+                            display: block !important;
+                            color: $color-white-0;
+                            font-size: $fs-2;
+                            margin-left: 145px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_contact {
+            .contact_left {
+                .hidden_contact {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@include responsive("medium") {
+    .footer_content {
+        .form__search {
+            .input_search {
+                display: none;
+            }
+            .myNavbarFooter{
+                justify-content: start;
+            }
+        }
+        .footer_language {
+            .logo__language {
+                .logo-fordRight {
+                    display: none;
+                }
+            }
+            ul {
+                li {
+                    display: block;
+                }
+            }
+            .logo-fordRightHidden {
+                display: block;
+            }
+        }
+    }
+}

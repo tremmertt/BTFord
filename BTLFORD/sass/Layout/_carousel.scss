@@ -1,0 +1,122 @@
+.fordCarousel {
+    .text__carousel1 {
+        background-color: transparent;
+        padding: $pd-1 0;
+        height: 102px;
+    }
+
+    #myCarousel {
+        .text__carousel2 {
+            height: 110px;
+            background-color: $color-black-3;
+            padding: $pd-1 0;
+            p {
+                @include styleText($color-white-0, $fs-0 + 1, $fw-normal);
+                text-align: center;
+                margin-bottom: 0;
+                line-height: $line-height-0;
+
+                a {
+                    @include styleText($color-blue-3, $fs-0 + 1, $fw-normal);
+                    text-decoration: underline;
+                    text-decoration-color: $color-blue-3;
+                    padding: 0 $pd-0;
+                }
+            }
+        }
+        .carousel-indicators {
+            bottom: 5px;
+            li {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin: 0 $mg-1;
+                border: 0;
+                opacity: 1;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+            & .active {
+                background-color: transparent !important;
+                border: 1px solid $color-white-0;
+                transform: scale(1.2);
+            }
+        }
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            max-height: 630px;
+            .carousel-item {
+                img {
+                    width: 100%;
+                }
+                .carousel-caption {
+                    text-align: left;
+                    position: absolute;
+                    top: 5%;
+                    left: 7%;
+                    h1 {
+                        padding-bottom: $pd-2;
+                    }
+                    a {
+                        display: inline;
+                        margin: $mg-2 0;
+                        text-align: center;
+                        span {
+                            @include styleText($color-white-0, $fs-0, $fw-normal);
+                            line-height: $line-height-0;
+                        }
+                        i {
+                            margin: 0 $mg-1;
+                            width: 20px;
+                            height: 20px;
+                            border: 1.5px solid $color-white-0;
+                            border-radius: 50%;
+                            line-height: 19px;
+                            color: $color-white-0;
+                            transition: all 0.5s;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            i {
+                                color: $color-black-0;
+                                background-color: $color-white-0;
+                            }
+                        }
+                    }
+                }
+                .itemCarousel_2 {
+                    text-align: left;
+                    position: absolute;
+                    top: 26%;
+                    left: 7%;
+
+                    button {
+                        padding: 15px 75px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("medium") {
+    .fordCarousel {
+        #myCarousel {
+            .text__carousel2{
+                .pb-4{
+                    padding: 0!important;
+                }
+            }
+            .carousel-prev,
+            .carousel-next {
+                display: none;
+            }
+
+          
+        }
+    }
+}

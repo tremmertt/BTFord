@@ -1,0 +1,1332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: #333;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.ford-btnWhite {
+  background-color: #fff;
+  border: 1px solid #0276b3;
+  padding: 15px 20px;
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.ford-btnWhite:hover {
+  color: #333;
+  background-color: #fff;
+  border-color: #333;
+}
+
+.ford-btnblue {
+  background-color: #0276b3;
+  border: 1px solid #0276b3;
+  padding: 11px 12px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.ford-btnblue:hover {
+  color: #29303b;
+  background-color: #f2f3f5;
+  border-color: #29303b;
+}
+
+.ford-btnRed {
+  background-color: #d92e14;
+  border: 1px solid #d92e14;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.ford-btnRed:hover {
+  color: #d92e14;
+  background-color: #fff;
+  border-color: #d92e14;
+}
+
+.header_content {
+  position: fixed;
+  z-index: 2001;
+  background-color: #fff;
+  width: 1440px;
+}
+
+.header_content .eyebrow {
+  background-color: #f3f3f3;
+}
+
+.header_content .eyebrow .row .eyebrow_left {
+  height: 40px;
+  line-height: 30px;
+  margin-right: 0;
+}
+
+.header_content .eyebrow .row .eyebrow_left a {
+  text-decoration: none;
+}
+
+.header_content .eyebrow .row .eyebrow_left a .eyebrow-icon img {
+  width: 43px;
+  height: 30px;
+}
+
+.header_content .eyebrow .row .eyebrow_left a .eyebrow-text {
+  color: #102b4e;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.header_content .eyebrow .row .eyebrow_right {
+  line-height: 35px;
+}
+
+.header_content .eyebrow .row .eyebrow_right a {
+  text-decoration: none;
+}
+
+.header_content .eyebrow .row .eyebrow_right a:hover {
+  color: #0276b3;
+}
+
+.header_content .eyebrow .row .eyebrow_right a i {
+  color: #333;
+}
+
+.header_content .eyebrow .row .eyebrow_right a .eyebrow_textright {
+  color: #0276b3;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.header_content .navbar {
+  padding: 0;
+}
+
+.header_content .navbar .header_left .navbar-brand .logo-ford {
+  background: url(../img/bsr-sprite2x.webp) no-repeat -200px 0;
+  width: 93px;
+  height: 35px;
+  background-size: 400px 200px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.header_content .navbar .header_left .navbar-nav {
+  margin-top: 10px;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .nav-link {
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse {
+  position: absolute;
+  width: 1442px;
+  left: -294%;
+  padding: 0;
+  margin: 0;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse .myNavBar {
+  border: 1px solid transparent;
+  background-color: #fafafa;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse .myNavBar .nav-tabs {
+  border: none;
+  margin-left: 130px;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse .myNavBar .nav-tabs .nav-item::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  display: block;
+  background-color: #0276b3;
+  transition: all 0.5s;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse .myNavBar .nav-tabs .nav-item:hover::after {
+  width: 100%;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse .myNavBar .nav-tabs .nav-item .nav-link {
+  border: none;
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 20px 10px;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .collapse .myNavBar .nav-tabs .nav-item .nav-link.active {
+  background-color: #fafafa;
+  border-bottom: 4px solid #102b4e;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles {
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content {
+  max-width: 1440px;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu {
+  display: flex;
+  list-style: none;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehicle-list-item {
+  max-width: 203px;
+  text-align: center;
+  cursor: pointer;
+  padding: 45px 10px;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehicle-list-item .images-item img {
+  width: 140px;
+  height: 60.5px;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehicle-list-item .name-vehicle p {
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.9em;
+  margin: 0;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehicle-list-item .name-vehicle span {
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehicle-list-item .name-vehicle sup {
+  color: #0276b3;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehiclesContainer {
+  justify-content: space-around;
+  float: left;
+  bottom: 0;
+  right: 0;
+  border-top: solid 1px #ddd;
+  width: 100%;
+  text-align: center;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehiclesContainer .container-fluid {
+  display: block;
+}
+
+.header_content .navbar .header_left .navbar-nav .nav-item .product__vehicles .container .tab-content .product__menu .vehiclesContainer .container-fluid button {
+  margin: 10px 5px;
+}
+
+.header_right .navbar__right {
+  color: #0276b3;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.header_right .navbar__right .icon-signin {
+  font-size: 24px;
+  margin-right: 10px;
+  margin-left: 60px;
+  vertical-align: middle;
+}
+
+.header_right .navbar__right .fas.fa-search {
+  font-size: 24px;
+  margin: 0 25px;
+}
+
+.header_right .navbar__right .fas.fa-globe-americas {
+  font-size: 24px;
+  margin: 0 25px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .header_content .container {
+    margin-left: 25px;
+  }
+  .header_content .container .header_right .icon__signIn .sign__in {
+    display: none;
+  }
+  .header_content .container .header_right .icon__search {
+    display: block;
+  }
+  .header_content .container .header_right .icon__language {
+    display: block;
+  }
+  .header_content .container .header_right .icon__language .english {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1000px) {
+  .header_content .eyebrow {
+    display: none;
+  }
+  .header_content .container {
+    margin-left: 10px;
+  }
+  .header_content .container .header_right .icon__signIn .sign__in {
+    display: none;
+  }
+  .header_content .container .header_right .icon__search {
+    display: block;
+  }
+  .header_content .container .header_right .icon__language {
+    display: block;
+  }
+  .header_content .container .header_right .icon__language .english {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .header_content .eyebrow {
+    display: none;
+  }
+  .header_content .container {
+    margin-left: 40px;
+  }
+  .header_content .container .header_left {
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+  .header_content .container .header_left .navbar-toggler {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+  .header_content .container .header_right .icon__signIn {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+  }
+  .header_content .container .header_right .icon__signIn .sign__in {
+    display: none;
+  }
+  .header_content .container .header_right .icon__search {
+    display: none;
+  }
+  .header_content .container .header_right .icon__language {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 579px) and (max-width: 768px) {
+  .header_content .eyebrow {
+    display: none;
+  }
+  .header_content .container {
+    margin-left: 75px;
+  }
+  .header_content .container .header_left {
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .header_content .container .header_left .navbar-brand .logo-ford {
+    margin-right: 5px;
+  }
+  .header_content .container .header_left .navbar-toggler {
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+  .header_content .container .header_right .icon__signIn {
+    position: absolute;
+    bottom: 15px !important;
+    right: 0 !important;
+  }
+  .header_content .container .header_right .icon__signIn .sign__in {
+    display: none;
+  }
+  .header_content .container .header_right .icon__search {
+    display: none;
+  }
+  .header_content .container .header_right .icon__language {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .header_content .eyebrow {
+    display: none;
+  }
+  .header_content .container {
+    margin-left: 35px;
+  }
+  .header_content .container .header_left {
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .header_content .container .header_left .navbar-brand .logo-ford {
+    margin-right: 5px;
+  }
+  .header_content .container .header_left .navbar-toggler {
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+  .header_content .container .header_right .icon__signIn {
+    position: absolute;
+    bottom: 15px !important;
+    right: 0 !important;
+  }
+  .header_content .container .header_right .icon__signIn .sign__in {
+    display: none;
+  }
+  .header_content .container .header_right .icon__search {
+    display: none;
+  }
+  .header_content .container .header_right .icon__language {
+    display: none;
+  }
+}
+
+.fordCarousel .text__carousel1 {
+  background-color: transparent;
+  padding: 10px 0;
+  height: 102px;
+}
+
+.fordCarousel #myCarousel .text__carousel2 {
+  height: 110px;
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+.fordCarousel #myCarousel .text__carousel2 p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.43em;
+}
+
+.fordCarousel #myCarousel .text__carousel2 p a {
+  color: #37a9e8;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-color: #37a9e8;
+  padding: 0 5px;
+}
+
+.fordCarousel #myCarousel .carousel-indicators {
+  bottom: 5px;
+}
+
+.fordCarousel #myCarousel .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 0;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.fordCarousel #myCarousel .carousel-indicators li:hover {
+  transform: scale(1.5);
+}
+
+.fordCarousel #myCarousel .carousel-indicators .active {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  transform: scale(1.2);
+}
+
+.fordCarousel #myCarousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  max-height: 630px;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item img {
+  width: 100%;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption {
+  text-align: left;
+  position: absolute;
+  top: 5%;
+  left: 7%;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption h1 {
+  padding-bottom: 20px;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption a {
+  display: inline;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption a span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.43em;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption a i {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  line-height: 19px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption a:hover {
+  text-decoration: none;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .carousel-caption a:hover i {
+  color: #29303b;
+  background-color: #fff;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .itemCarousel_2 {
+  text-align: left;
+  position: absolute;
+  top: 26%;
+  left: 7%;
+}
+
+.fordCarousel #myCarousel .carousel-inner .carousel-item .itemCarousel_2 button {
+  padding: 15px 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .fordCarousel #myCarousel .text__carousel2 .pb-4 {
+    padding: 0 !important;
+  }
+  .fordCarousel #myCarousel .carousel-prev,
+  .fordCarousel #myCarousel .carousel-next {
+    display: none;
+  }
+}
+
+.carousel-prev {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 50px;
+  height: 50px;
+  opacity: .8;
+  background-color: #555;
+  z-index: 3;
+  text-align: center;
+}
+
+.carousel-prev span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.carousel-prev:hover {
+  background-color: #fff;
+  border: 1px solid #2096cd;
+  border-left: unset;
+}
+
+.carousel-prev:hover > span {
+  color: #2096cd;
+}
+
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  opacity: .8;
+  background-color: #555;
+  z-index: 3;
+  text-align: center;
+}
+
+.carousel-next span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.carousel-next:hover {
+  background-color: #fff;
+  border: 1px solid #2096cd;
+  border-right: unset;
+}
+
+.carousel-next:hover > span {
+  color: #2096cd;
+}
+
+.ford_info .row,
+.ford_info .ford__InforButton {
+  max-width: 1440px !important;
+  background-color: #0276b3;
+  padding: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.ford_info .row .inforButtonLeft, .ford_info .row .inforButtonRight,
+.ford_info .ford__InforButton .inforButtonLeft,
+.ford_info .ford__InforButton .inforButtonRight {
+  margin-bottom: 25px;
+}
+
+.ford_info .row .inforButtonLeft h3, .ford_info .row .inforButtonRight h3,
+.ford_info .ford__InforButton .inforButtonLeft h3,
+.ford_info .ford__InforButton .inforButtonRight h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.9em;
+}
+
+.ford_info .row .inforButtonLeft p, .ford_info .row .inforButtonRight p,
+.ford_info .ford__InforButton .inforButtonLeft p,
+.ford_info .ford__InforButton .inforButtonRight p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.9em;
+}
+
+.ford_info .row .inforButtonRight p,
+.ford_info .ford__InforButton .inforButtonRight p {
+  margin-bottom: 65px;
+}
+
+.ford_info .ford__InforText {
+  margin-top: 10px;
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.9em;
+}
+
+.ford_info .ford__InforText a {
+  text-decoration: underline;
+  color: #0276b3;
+}
+
+.ford_info .banner {
+  background-image: url(../img/inventory.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 225px;
+}
+
+.ford_info .banner .banner__info {
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 10px;
+}
+
+.ford_info .banner .banner__info h1 {
+  margin-bottom: 25px;
+}
+
+.ford_info .banner .banner__info a {
+  color: #37a9e8;
+}
+
+.ford_info .banner .banner__info a:hover {
+  text-decoration: none;
+}
+
+.ford_info .banner .banner__info a i {
+  margin-left: 10px;
+}
+
+.ford_info .banner p {
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+  padding-left: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .ford_info .ford__InforButton {
+    display: block;
+    text-align: center;
+  }
+  .ford_info .ford__InforText {
+    font-size: 12px;
+  }
+  .ford_info .banner .banner__info h1 {
+    font-size: 30px;
+  }
+}
+
+.happeningFord .product__ford {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.happeningFord .product__ford .product_item {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.happeningFord .product__ford .product_item img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.happeningFord .product__ford .product_item .information_img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  background: rgba(6, 120, 188, 0.5);
+  cursor: pointer;
+}
+
+.happeningFord .product__ford .product_item .information_img span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  align-self: center;
+}
+
+.happeningFord .product__ford .product_item .information_img i {
+  color: #fff;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 1.8;
+  margin-right: 10px;
+}
+
+.happeningFord .product__ford .product_item .information_img i:hover {
+  background: #fff;
+  color: #37a9e8;
+}
+
+.happeningFord .product__ford .product_item:hover img {
+  width: 100%;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.happeningFord .product__ford .product_item1 {
+  grid-column: 1 / span 3;
+  display: block;
+  text-align: center;
+  align-self: center;
+}
+
+.happeningFord .product__ford .product_item1 p {
+  color: #555;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.9em;
+}
+
+.happeningFord .product__ford .product_item2 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.happeningFord .product__ford .product_item2 .information_img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 20px 20px;
+  background: rgba(6, 120, 188, 0.5);
+  cursor: pointer;
+}
+
+.happeningFord .product__ford .product_item2 .information_img span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  align-self: center;
+}
+
+.happeningFord .product__ford .product_item2 .information_img i {
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 1.8;
+  margin-right: 10px;
+}
+
+.happeningFord .product__ford .product_item2 .information_img i:hover {
+  background: #fff;
+  color: #37a9e8;
+}
+
+@media screen and (max-width: 768px) {
+  .happeningFord .product__ford {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+.airbagRecalls {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+}
+
+.airbagRecalls h2 {
+  color: #d92e14;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.43em;
+}
+
+.airbagRecalls button {
+  margin-top: 25px;
+  padding: 15px 72px;
+  line-height: 1.43em;
+}
+
+.disclosures .title__disclosures {
+  padding: 20px 0;
+}
+
+.disclosures .title__disclosures a {
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.9em;
+}
+
+.disclosures .title__disclosures a i {
+  margin-left: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+  transform: rotate(0);
+}
+
+.disclosures .title__disclosures a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.disclosures .title__disclosures a:hover i {
+  color: #0276b3;
+}
+
+.disclosures .collapse .card-body {
+  background-color: #f7f7f7;
+}
+
+.disclosures .collapse .card-body .disclosures__text {
+  max-height: 240px;
+  padding: 40px 95px;
+  overflow-y: scroll;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.disclosures .collapse .card-body .disclosures__text li {
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.disclosures .collapse .card-body .disclosures__text li p {
+  margin-bottom: 10px;
+}
+
+.residents {
+  background-color: #092a46;
+  margin-top: 10px;
+}
+
+.residents h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.residents p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.residents p a {
+  color: #37a9e8;
+  text-decoration: underline;
+}
+
+.residents button {
+  margin-bottom: 25px;
+}
+
+.footer_content .form__search {
+  background-color: #333;
+  display: flex;
+}
+
+.footer_content .form__search .input_search {
+  padding: 20px 0;
+}
+
+.footer_content .form__search .input_search i {
+  color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+.footer_content .form__search .input_search .search-input {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+  padding-right: 40px;
+  padding-left: 5px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer_content .form__search .input_search .search-input::placeholder {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer_content .form__search .input_search .search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.footer_content .form__search .myNavbarFooter {
+  color: #fff;
+  display: flex;
+  padding: 30px 0;
+  justify-content: flex-end;
+}
+
+.footer_content .form__search .myNavbarFooter span {
+  padding-right: 5px;
+}
+
+.footer_content .form__search .myNavbarFooter ul {
+  list-style: none;
+}
+
+.footer_content .form__search .myNavbarFooter ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer_content .form__search .myNavbarFooter ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer_content .form__search .myNavbarFooter ul li a:hover {
+  opacity: 1;
+}
+
+.footer_content .footer_infomation {
+  background-color: #242424;
+}
+
+.footer_content .footer_infomation .container {
+  padding: 0;
+}
+
+.footer_content .footer_infomation .container .footer__info {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+.footer_content .footer_infomation .container .footer__info .vehicles,
+.footer_content .footer_infomation .container .footer__info .shopping,
+.footer_content .footer_infomation .container .footer__info .finance,
+.footer_content .footer_infomation .container .footer__info .owner,
+.footer_content .footer_infomation .container .footer__info .experience-ford {
+  list-style: none;
+  padding: 0 68px;
+  text-align: left;
+  padding-left: unset;
+}
+
+.footer_content .footer_infomation .container .footer__info .vehicles span,
+.footer_content .footer_infomation .container .footer__info .shopping span,
+.footer_content .footer_infomation .container .footer__info .finance span,
+.footer_content .footer_infomation .container .footer__info .owner span,
+.footer_content .footer_infomation .container .footer__info .experience-ford span {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer_content .footer_infomation .container .footer__info .vehicles ul li,
+.footer_content .footer_infomation .container .footer__info .shopping ul li,
+.footer_content .footer_infomation .container .footer__info .finance ul li,
+.footer_content .footer_infomation .container .footer__info .owner ul li,
+.footer_content .footer_infomation .container .footer__info .experience-ford ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.footer_content .footer_infomation .container .footer__info .vehicles ul a,
+.footer_content .footer_infomation .container .footer__info .shopping ul a,
+.footer_content .footer_infomation .container .footer__info .finance ul a,
+.footer_content .footer_infomation .container .footer__info .owner ul a,
+.footer_content .footer_infomation .container .footer__info .experience-ford ul a {
+  color: #fff;
+  opacity: 0.5;
+  line-height: 1.9em;
+}
+
+.footer_content .footer_infomation .container .footer__info .vehicles ul a:hover,
+.footer_content .footer_infomation .container .footer__info .shopping ul a:hover,
+.footer_content .footer_infomation .container .footer__info .finance ul a:hover,
+.footer_content .footer_infomation .container .footer__info .owner ul a:hover,
+.footer_content .footer_infomation .container .footer__info .experience-ford ul a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .finance .icon_hidden1,
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .owner .icon_hidden1,
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .experience-ford .icon_hidden1 {
+  display: none;
+}
+
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .finance .icon_hidden2,
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .owner .icon_hidden2,
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .experience-ford .icon_hidden2 {
+  display: none;
+}
+
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .finance .icon_hidden3,
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .owner .icon_hidden3,
+.footer_content .footer_infomation .container .footer__info .infomation_hidden .experience-ford .icon_hidden3 {
+  display: none;
+}
+
+.footer_content .footer_contact {
+  background-color: #102b4e;
+}
+
+.footer_content .footer_contact .contact_left {
+  padding-top: 30px;
+}
+
+.footer_content .footer_contact .contact_left p {
+  color: #37a9e8;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer_content .footer_contact .contact_left p a {
+  color: #0276b3;
+  line-height: 1.9em;
+  margin-right: 10px;
+}
+
+.footer_content .footer_contact .contact_left p a i {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  background-color: #0276b3;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer_content .footer_contact .contact_left p a span {
+  color: #37a9e8;
+  line-height: 1.9em;
+}
+
+.footer_content .footer_contact .contact_left p a:hover {
+  text-decoration: none;
+}
+
+.footer_content .footer_contact .contact_right {
+  display: flex;
+  padding: 30px 0;
+  justify-content: flex-end;
+}
+
+.footer_content .footer_contact .contact_right p {
+  align-self: center;
+  margin-right: 25px;
+}
+
+.footer_content .footer_contact .contact_right ul {
+  align-self: center;
+}
+
+.footer_content .footer_contact .contact_right ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 2px;
+}
+
+.footer_content .footer_contact .contact_right ul li .facebook-icon {
+  background: url(../img/bsr-sprite2x.webp) no-repeat 0 0;
+  height: 40px;
+  width: 40px;
+  background-size: 400px 200px;
+  display: inline-block;
+}
+
+.footer_content .footer_contact .contact_right ul li .twitter-icon {
+  background: url(../img/bsr-sprite2x.webp) no-repeat -40px 0;
+  height: 40px;
+  width: 40px;
+  background-size: 400px 200px;
+  display: inline-block;
+}
+
+.footer_content .footer_contact .contact_right ul li .youtube-icon {
+  background: url(../img/bsr-sprite2x.webp) no-repeat -80px 0;
+  height: 40px;
+  width: 40px;
+  background-size: 400px 200px;
+  display: inline-block;
+}
+
+.footer_content .footer_contact .contact_right ul li .instagram-icon {
+  background: url(../img/bsr-sprite2x.webp) no-repeat -120px 0;
+  height: 40px;
+  width: 40px;
+  background-size: 400px 200px;
+  display: inline-block;
+}
+
+.footer_content .footer_language {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+.footer_content .footer_language .logo__language {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_content .footer_language .logo__language a i {
+  color: #2096cd;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer_content .footer_language .logo__language a span {
+  color: #0276b3;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.footer_content .footer_language .logo__language a:hover i {
+  color: #29303b;
+}
+
+.footer_content .footer_language .logo__language a:hover span {
+  color: #29303b;
+}
+
+.footer_content .footer_language .logo__language .logo-fordRight {
+  background: url(../img/bsr-sprite2x.webp) no-repeat -150px 0;
+  width: 73px;
+  height: 26px;
+  background-size: 300px 150px;
+  display: block;
+  cursor: pointer;
+}
+
+.footer_content .footer_language p {
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.footer_content .footer_language ul li {
+  list-style: none;
+  display: inline;
+  padding: 5px 20px;
+  padding-left: unset;
+}
+
+.footer_content .footer_language ul li a {
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.footer_content .footer_language ul li a:hover {
+  text-decoration: none;
+}
+
+.footer_content .footer_language .logo-fordRightHidden {
+  background: url(../img/bsr-sprite2x.webp) no-repeat -150px 0;
+  width: 73px;
+  height: 26px;
+  background-size: 300px 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer_content .footer_contact .contact_right {
+    display: inline;
+    text-align: right;
+  }
+  .footer_content .footer_contact .contact_right p {
+    position: absolute;
+    right: 80px;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .footer_content .footer_infomation .footer__info .infomation_hidden {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer_content .footer_infomation .footer__info .vehicles,
+  .footer_content .footer_infomation .footer__info .shopping,
+  .footer_content .footer_infomation .footer__info .finance,
+  .footer_content .footer_infomation .footer__info .owner,
+  .footer_content .footer_infomation .footer__info .experience-ford {
+    padding: 0 20px !important;
+  }
+  .footer_content .footer_infomation .footer__info .vehicles .finance_hidden,
+  .footer_content .footer_infomation .footer__info .shopping .finance_hidden,
+  .footer_content .footer_infomation .footer__info .finance .finance_hidden,
+  .footer_content .footer_infomation .footer__info .owner .finance_hidden,
+  .footer_content .footer_infomation .footer__info .experience-ford .finance_hidden {
+    display: none;
+  }
+  .footer_content .footer_infomation .footer__info .vehicles .owner_hidden,
+  .footer_content .footer_infomation .footer__info .shopping .owner_hidden,
+  .footer_content .footer_infomation .footer__info .finance .owner_hidden,
+  .footer_content .footer_infomation .footer__info .owner .owner_hidden,
+  .footer_content .footer_infomation .footer__info .experience-ford .owner_hidden {
+    display: none;
+  }
+  .footer_content .footer_infomation .footer__info .vehicles .experience-fordHidden,
+  .footer_content .footer_infomation .footer__info .shopping .experience-fordHidden,
+  .footer_content .footer_infomation .footer__info .finance .experience-fordHidden,
+  .footer_content .footer_infomation .footer__info .owner .experience-fordHidden,
+  .footer_content .footer_infomation .footer__info .experience-ford .experience-fordHidden {
+    display: none;
+  }
+  .footer_content .footer_infomation .footer__info .infomation_hidden .finance,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .owner,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .experience-ford {
+    display: flex;
+    padding-bottom: 20px !important;
+    border-bottom: 1px solid #3a3a3a;
+  }
+  .footer_content .footer_infomation .footer__info .infomation_hidden .finance .icon_hidden1,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .owner .icon_hidden1,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .experience-ford .icon_hidden1 {
+    display: block !important;
+    font-size: 20px;
+    margin-left: 200px;
+    color: #fff;
+  }
+  .footer_content .footer_infomation .footer__info .infomation_hidden .finance .icon_hidden2,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .owner .icon_hidden2,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .experience-ford .icon_hidden2 {
+    display: block !important;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 210px;
+  }
+  .footer_content .footer_infomation .footer__info .infomation_hidden .finance .icon_hidden3,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .owner .icon_hidden3,
+  .footer_content .footer_infomation .footer__info .infomation_hidden .experience-ford .icon_hidden3 {
+    display: block !important;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 145px;
+  }
+  .footer_content .footer_contact .contact_left .hidden_contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer_content .form__search .input_search {
+    display: none;
+  }
+  .footer_content .form__search .myNavbarFooter {
+    justify-content: start;
+  }
+  .footer_content .footer_language .logo__language .logo-fordRight {
+    display: none;
+  }
+  .footer_content .footer_language ul li {
+    display: block;
+  }
+  .footer_content .footer_language .logo-fordRightHidden {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */

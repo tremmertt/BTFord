@@ -1,0 +1,40 @@
+.disclosures {
+    .title__disclosures {
+        padding: $pd-2 0;
+        a {
+            @include styleText($color-blue-1, $fs-0 + 1, $fw-normal);
+            line-height: $line-height-1;
+            i {
+                margin-left: $mg-1;
+                font-size: $fs-2;
+                vertical-align: middle;
+                transform: rotate(0);
+            }
+            &:hover {
+                text-decoration: none;
+                color: $color-black-1;
+                i {
+                    color: $color-blue-1;
+                }
+            }
+        }
+    }
+    .collapse {
+        .card-body {
+            background-color: $color-gray-3;
+            .disclosures__text {
+                max-height: 240px;
+                padding: 40px 95px;
+                overflow-y: scroll;
+                list-style: none;
+                margin-bottom: $mg-1;
+                li {
+                    @include styleText($color-black-1, $fs-1 - 1, $fw-normal);
+                    p {
+                        margin-bottom: $mg-1;
+                    }
+                }
+            }
+        }
+    }
+}
